@@ -15,61 +15,61 @@ Streamlit: For creating an interactive and user-friendly web app.<br>
 
 ### 🔍 𝐊𝐞𝐲 𝐒𝐭𝐞𝐩𝐬
 
-* 1.Data Collection & Preprocessing<br>
+1.Data Collection & Preprocessing<br>
 * Data Source: A dataset containing height and weight measurements of individuals, along with additional optional attributes like gender and age.<br>
 * Data Cleaning: Checked for missing values and outliers, removed or imputed missing data where necessary.<br>
 * Feature Scaling: Used standardization techniques to scale numerical features (height, weight) to ensure consistent ranges for model inputs.<br>
 * Feature Engineering: Considered adding derived features like BMI, although the primary focus remained on height-to-weight predictions.<br>
+
 2. Exploratory Data Analysis (EDA)<br>
+* Conducted visual analysis using scatter plots to understand the relationship between height and weight.
+* Visualized correlations between variables using heatmaps, confirming that height has a strong positive correlation with weight.<br>
 
-Conducted visual analysis using scatter plots to understand the relationship between height and weight.
-Visualized correlations between variables using heatmaps, confirming that height has a strong positive correlation with weight.<br>
 3. Model Training<br>
+* Trained multiple regression models to predict weight based on height:<br>
+* Linear Regression: A baseline model assuming a linear relationship between height and weight.<br>
+* Random Forest Regressor: An ensemble model capturing complex relationships with high variance.<br>
+* Decision Tree Regressor: For visualizing the decision-making process in predictions.<br>
 
-Trained multiple regression models to predict weight based on height:<br>
-Linear Regression: A baseline model assuming a linear relationship between height and weight.<br>
-Random Forest Regressor: An ensemble model capturing complex relationships with high variance.<br>
-K-Nearest Neighbors (KNN) Regressor: A simple model predicting weight based on the closest data points in height.<br>
-Decision Tree Regressor: For visualizing the decision-making process in predictions.<br>
 4. Model Evaluation<br>
 
-Assessed models using common metrics for regression tasks:<br>
-Mean Absolute Error (MAE): Measures the average magnitude of errors in predictions.<br>
-Mean Squared Error (MSE): Emphasizes larger errors by squaring the difference between predicted and actual weights.<br>
-R² Score: Evaluates how well the model explains the variance in the target variable (weight).<br>
-Compared the performance of models to identify the best one for predicting weight.<br>
+* Assessed models using common metrics for regression tasks:<br>
+* Mean Absolute Error (MAE): Measures the average magnitude of errors in predictions.<br>
+* Mean Squared Error (MSE): Emphasizes larger errors by squaring the difference between predicted and actual weights.<br>
+* R² Score: Evaluates how well the model explains the variance in the target variable (weight).<br>
+* Compared the performance of models to identify the best one for predicting weight.<br>
+
 5. Model Deployment<br>
 
-Deployed the model using Streamlit, allowing users to input their height and other optional features like gender to get instant weight predictions.<br>
-Integrated user input sliders and interactive elements in the app, making it easy to use for anyone, from fitness enthusiasts to health professionals.<br>
+* Deployed the model using Streamlit, allowing users to input their height and other optional features like gender to get instant weight predictions.<br>
+* Integrated user input sliders and interactive elements in the app, making it easy to use for anyone, from fitness enthusiasts to health professionals.<br>
+
 ### 📊 𝐊𝐞𝐲 𝐅𝐢𝐧𝐝𝐢𝐧𝐠𝐬
 Model Results:
 
-Linear Regression: Provided a simple yet effective solution for height-to-weight prediction with good accuracy.<br>
+1.Linear Regression: Provided a simple yet effective solution for height-to-weight prediction with good accuracy.<br>
+* MAE: 21.69<br>
+* R² Score: 0.94<br>
 
-MAE: 3.85<br>
-R² Score: 0.92<br>
-Random Forest Regressor: Demonstrated slightly better performance in terms of accuracy, especially for complex data points.<br>
+2.Random Forest Regressor: Demonstrated slightly better performance in terms of accuracy, especially for complex data points.<br>
+* MAE: 31.10<br>
+* R² Score: 0.92<br>
 
-MAE: 3.45<br>
-R² Score: 0.94<br>
-K-Nearest Neighbors (KNN): Performed well for local predictions but had limitations for broader data coverage.<br>
+3.Decision Tree: Worked effectively but tended to overfit the training data.<br>
+* MAE: 41.50<br>
+* R² Score: 0.90<br>
 
-MAE: 4.12<br>
-R² Score: 0.88<br>
-Decision Tree: Worked effectively but tended to overfit the training data.<br>
-
-MAE: 4.03<br>
-R² Score: 0.90<br>
-Best Performing Model: Random Forest Regressor showed the highest accuracy and robustness, making it the preferred model for deployment.
+Best Performing Model: LinearRegressor showed the highest accuracy and robustness, making it the preferred model for deployment.
 
 ### 🌐 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧
-The Body Metrics Analyzer app, built using Streamlit, allows users to input their height, and optionally, age or gender, to predict their weight. The app is designed with a clean, intuitive interface and provides real-time predictions. This tool can be particularly useful for:
 
-Fitness Enthusiasts: Estimating body weight based on height for setting fitness goals or checking health parameters like BMI.
-Health Practitioners: Offering patients a quick estimate of body metrics without the need for physical measurement tools.
-Personal Trainers & Wellness Coaches: Providing quick assessments for clients, especially when access to weighing scales is limited.
+The Body Metrics Analyzer app, built using Streamlit, allows users to input their height, and optionally, age or gender, to predict their weight. The app is designed with a clean, intuitive interface and provides real-time predictions. This tool can be particularly useful for:
+* Fitness Enthusiasts: Estimating body weight based on height for setting fitness goals or checking health parameters like BMI.
+* Health Practitioners: Offering patients a quick estimate of body metrics without the need for physical measurement tools.
+* Personal Trainers & Wellness Coaches: Providing quick assessments for clients, especially when access to weighing scales is limited.
+  
 ### 🔮 𝐅𝐮𝐭𝐮𝐫𝐞 𝐈𝐦𝐩𝐫𝐨𝐯𝐞𝐦𝐞𝐧𝐭𝐬
-Incorporating more features like body fat percentage and muscle mass predictions based on additional data inputs like age, gender, and activity levels.
-Expanding the dataset to include diverse populations for more generalized predictions.
-Adding features to estimate BMI and recommend fitness or dietary plans based on the user's weight prediction and health goals.
+
+* Incorporating more features like body fat percentage and muscle mass predictions based on additional data inputs like age, gender, and activity levels.
+* Expanding the dataset to include diverse populations for more generalized predictions.
+* Adding features to estimate BMI and recommend fitness or dietary plans based on the user's weight prediction and health goals.
