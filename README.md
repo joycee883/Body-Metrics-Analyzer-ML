@@ -22,10 +22,12 @@ Streamlit: For creating an interactive and user-friendly web app.<br>
   * Feature Engineering: Considered adding derived features like BMI, although the primary focus remained on height-to-weight predictions.<br>
 
 2. Exploratory Data Analysis (EDA)<br>
+
   * Conducted visual analysis using scatter plots to understand the relationship between height and weight.
   * Visualized correlations between variables using heatmaps, confirming that height has a strong positive correlation with weight.<br>
 
 3. Model Training<br>
+
   * Trained multiple regression models to predict weight based on height:<br>
   * Linear Regression: A baseline model assuming a linear relationship between height and weight.<br>
   * Random Forest Regressor: An ensemble model capturing complex relationships with high variance.<br>
@@ -33,17 +35,17 @@ Streamlit: For creating an interactive and user-friendly web app.<br>
 
 4. Model Evaluation<br>
 
-* Assessed models using common metrics for regression tasks:<br>
-* Mean Absolute Error (MAE): Measures the average magnitude of errors in predictions.<br>
-* Mean Squared Error (MSE): Emphasizes larger errors by squaring the difference between predicted and actual weights.<br>
-* R² Score: Evaluates how well the model explains the variance in the target variable (weight).<br>
-* Compared the performance of models to identify the best one for predicting weight.<br>
+  * Assessed models using common metrics for regression tasks:<br>
+  * Mean Absolute Error (MAE): Measures the average magnitude of errors in predictions.<br>
+  * Mean Squared Error (MSE): Emphasizes larger errors by squaring the difference between predicted and actual weights.<br>
+  * R² Score: Evaluates how well the model explains the variance in the target variable (weight).<br>
+  * Compared the performance of models to identify the best one for predicting weight.<br>
 
 5. Model Deployment<br>
 
-* Deployed the model using Streamlit, allowing users to input their height and other optional features like gender to get instant weight predictions.<br>
-* Integrated user input sliders and interactive elements in the app, making it easy to use for anyone, from fitness enthusiasts to health professionals.<br>
-
+  * Deployed the model using Streamlit, allowing users to input their height and other optional features like gender to get instant weight predictions.<br>
+  * Integrated user input sliders and interactive elements in the app, making it easy to use for anyone, from fitness enthusiasts to health professionals.<br>
+  
 ### 📊 𝐊𝐞𝐲 𝐅𝐢𝐧𝐝𝐢𝐧𝐠𝐬
 Model Results:
 
