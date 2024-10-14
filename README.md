@@ -75,5 +75,7 @@ The Body Metrics Analyzer app, built using Streamlit, allows users to input thei
 * Incorporating more features like body fat percentage and muscle mass predictions based on additional data inputs like age, gender, and activity levels.
 * Expanding the dataset to include diverse populations for more generalized predictions.
 * Adding features to estimate BMI and recommend fitness or dietary plans based on the user's weight prediction and health goals.
+  
 
+**Discover the Body Metrics Analyzer app! This Streamlit application leverages data science to help users predict their weight from height and other body metrics. Visit the live app here.**
 https://bodymetricsanalyzer-v6na3dsemdxvs3azfzpzbk.streamlit.app/
