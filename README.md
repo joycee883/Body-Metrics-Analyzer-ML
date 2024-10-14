@@ -15,7 +15,8 @@ Streamlit: For creating an interactive and user-friendly web app.<br>
 
 ### 🔍 𝐊𝐞𝐲 𝐒𝐭𝐞𝐩𝐬
 
-1.Data Collection & Preprocessing<br>
+1. Data Collection & Preprocessing<br>
+
   * Data Source: A dataset containing height and weight measurements of individuals, along with additional optional attributes like gender and age.<br>
   * Data Cleaning: Checked for missing values and outliers, removed or imputed missing data where necessary.<br>
   * Feature Scaling: Used standardization techniques to scale numerical features (height, weight) to ensure consistent ranges for model inputs.<br>
