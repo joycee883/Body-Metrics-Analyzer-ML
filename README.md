@@ -15,14 +15,14 @@ Streamlit: For creating an interactive and user-friendly web app.<br>
 
 ### 🔍 𝐊𝐞𝐲 𝐒𝐭𝐞𝐩𝐬
 
-1. Data Collection & Preprocessing<br>
+*1. Data Collection & Preprocessing*<br>
 
   * Data Source: A dataset containing height and weight measurements of individuals, along with additional optional attributes like gender and age.<br>
   * Data Cleaning: Checked for missing values and outliers, removed or imputed missing data where necessary.<br>
   * Feature Scaling: Used standardization techniques to scale numerical features (height, weight) to ensure consistent ranges for model inputs.<br>
   * Feature Engineering: Considered adding derived features like BMI, although the primary focus remained on height-to-weight predictions.<br>
 
-2. Exploratory Data Analysis (EDA)<br>
+*2. Exploratory Data Analysis (EDA)*<br>
 
   * Conducted visual analysis using scatter plots to understand the relationship between height and weight.
   * Visualized correlations between variables using heatmaps, confirming that height has a strong positive correlation with weight.<br>
