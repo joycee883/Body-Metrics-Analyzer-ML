@@ -7,9 +7,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os 
 
-# Change the working directory to your project folder
-os.chdir(r'C:\Users\91939\Desktop\AI&DS\Data science projects\BodyMetricsAnalyzer')
-
 # Load the saved model from the file
 filename = 'final_model.pkl'
 with open(filename, 'rb') as file:
