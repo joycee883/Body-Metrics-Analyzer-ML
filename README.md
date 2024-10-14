@@ -6,35 +6,37 @@ The Body Metrics Analyzer project is designed to predict an individual's weight 
 
 ### 🛠️ 𝐓𝐨𝐨𝐥𝐬 𝐔𝐬𝐞𝐝
 
-Programming Language: Python<br> Libraries:<br>
+**Programming Language:** Python<br> 
+**Libraries:** <br>
 NumPy: For efficient numerical computations.<br>
 Pandas: For handling and preprocessing data.<br>
 Scikit-learn: For model development, training, and evaluation.<br>
 Matplotlib & Seaborn: For data visualization and exploratory analysis.<br>
-Streamlit: For creating an interactive and user-friendly web app.<br>
+
+**Streamlit:** For creating an interactive and user-friendly web app.<br>
 
 ### 🔍 𝐊𝐞𝐲 𝐒𝐭𝐞𝐩𝐬
 
-*1. Data Collection & Preprocessing*<br>
+**1. Data Collection & Preprocessing**<br>
 
   * Data Source: A dataset containing height and weight measurements of individuals, along with additional optional attributes like gender and age.<br>
   * Data Cleaning: Checked for missing values and outliers, removed or imputed missing data where necessary.<br>
   * Feature Scaling: Used standardization techniques to scale numerical features (height, weight) to ensure consistent ranges for model inputs.<br>
   * Feature Engineering: Considered adding derived features like BMI, although the primary focus remained on height-to-weight predictions.<br>
 
-*2. Exploratory Data Analysis (EDA)*<br>
+**2. Exploratory Data Analysis (EDA)**<br>
 
   * Conducted visual analysis using scatter plots to understand the relationship between height and weight.
   * Visualized correlations between variables using heatmaps, confirming that height has a strong positive correlation with weight.<br>
 
-3. Model Training<br>
+**3. Model Training**<br>
 
   * Trained multiple regression models to predict weight based on height:<br>
   * Linear Regression: A baseline model assuming a linear relationship between height and weight.<br>
   * Random Forest Regressor: An ensemble model capturing complex relationships with high variance.<br>
   * Decision Tree Regressor: For visualizing the decision-making process in predictions.<br>
 
-4. Model Evaluation<br>
+**4. Model Evaluation**<br>
 
   * Assessed models using common metrics for regression tasks:<br>
   * Mean Absolute Error (MAE): Measures the average magnitude of errors in predictions.<br>
@@ -42,7 +44,7 @@ Streamlit: For creating an interactive and user-friendly web app.<br>
   * R² Score: Evaluates how well the model explains the variance in the target variable (weight).<br>
   * Compared the performance of models to identify the best one for predicting weight.<br>
 
-5. Model Deployment<br>
+**5. Model Deployment**<br>
 
   * Deployed the model using Streamlit, allowing users to input their height and other optional features like gender to get instant weight predictions.<br>
   * Integrated user input sliders and interactive elements in the app, making it easy to use for anyone, from fitness enthusiasts to health professionals.<br>
@@ -50,19 +52,19 @@ Streamlit: For creating an interactive and user-friendly web app.<br>
 ### 📊 𝐊𝐞𝐲 𝐅𝐢𝐧𝐝𝐢𝐧𝐠𝐬
 Model Results:
 
-1.Linear Regression: Provided a simple yet effective solution for height-to-weight prediction with good accuracy.<br>
+**1.Linear Regression:** Provided a simple yet effective solution for height-to-weight prediction with good accuracy.<br>
 * MAE: 21.69<br>
 * R² Score: 0.94<br>
 
-2.Random Forest Regressor: Demonstrated slightly better performance in terms of accuracy, especially for complex data points.<br>
+**2.Random Forest Regressor:** Demonstrated slightly better performance in terms of accuracy, especially for complex data points.<br>
 * MAE: 31.10<br>
 * R² Score: 0.92<br>
 
-3.Decision Tree: Worked effectively but tended to overfit the training data.<br>
+**3.Decision Tree:** Worked effectively but tended to overfit the training data.<br>
 * MAE: 41.50<br>
 * R² Score: 0.90<br>
 
-Best Performing Model: LinearRegressor showed the highest accuracy and robustness, making it the preferred model for deployment.
+**Best Performing Model:** LinearRegressor showed the highest accuracy and robustness, making it the preferred model for deployment.
 
 ### 🌐 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧
 
